@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <form action="'">
+
+        <label for="billTotal"> Bill Total</label>
+        <input id="billTotal" class="js-bill-total" value="0.00" type="number">
+
+        <br> 
+
+        <label for="percentage"> Percentage </label>
+        <input id="percentage" class="js-percentage-total" value="15" type="number">
+
+        <button class ="js-submit-button"> Submit </button>
+    </form>
+
+    <h2> "Your Total:" <span class = ".js-your-total">$0.00</span></h2>
+    <p> You Should Tip <span class = ".js-should-tip">$0.00</span></p>
+    <p> Grand Total <span class = ".js-grand-total">$0.00 </span></p>
+
+
+    <script>
+
+
+        const submitButton = document.querySelector('.js-submit-button')
+
+        //update values on screen
+
+            submitButton.addEventListener('click', function(event){
+            event.preventDefault()
+
+        //get % amount      
+        const inputTotal = document.querySelector('.js-bill-total').value
+
+        //get value of total
+        const inputPercentage = document.querySelector('.js-percentage-total').value
+
+    
+        const textTotal = document.querySelector('.js-your-total')
+        const textTip = document.querySelector('.js-should-tip')
+        const textGrandTotal = document.querySelector('.js-grand-total')
+
+        // calculate tip math
+        const tipAmount =  (inputPercentage/100)*inputTotal;
+        const formattedTipAmount = tipAmount.toFixed(2);
+
+        textTotal.innerhtml= inputTotal;
+        textTip.innerhtml= formattedTipAmount;
+        textGrandTotal.innerhtml= parseFloat(inputTotal)+parseFloat(formattedTipAmount);
+
+    
+
+        })
+
+    </script>
+    
+</body>
+</html>
