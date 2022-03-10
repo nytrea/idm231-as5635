@@ -1,0 +1,129 @@
+body.home{
+    background-image: url("zodiacimages/Hogwarts_Bright_BG.jpg");
+
+}
+
+body.creatureGallery{
+    background-color: rgb(3, 31, 48);
+}
+
+@font-face {
+    font-family: 'Italianno';
+    src: url('Italianno/Italianno-Regular.ttf');
+}
+@font-face {
+    font-family: 'Estonia';
+    src: url('Estonia/Estonia-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vollkorn_Regular';
+    src: url('Vollkorn/static/Vollkorn-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vollkorn_Italic';
+    src: url('Vollkorn/static/Vollkorn-Italic.ttf');
+}
+
+.heading{
+    font-family: Estonia;
+    color:rgb(0, 30, 54);
+}
+
+.heading_one{
+    margin-left: 4rem;
+    margin-bottom: 0;
+    font-size: 5rem;
+
+}
+.heading_two{
+    margin-left: 7rem;
+    margin-top: 0;
+    font-size: 7rem;
+
+}
+
+.birthday_input{
+    margin-left: 5rem;
+    font-family: Vollkorn_Italic;
+    color:rgb(0, 30, 54);
+    font-size: 1.25rem;
+}
+
+.js_submit_button{
+    border:none;
+    background-color: cadetblue;
+}
+
+
+.explore_image{
+
+    display: block;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.explore_image_link{
+
+    position: absolute;
+    bottom: 0;
+
+}
+
+.return_link_div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.return_link{
+    display: flex;
+    justify-content: end;
+    color: rgb(192, 133, 24);
+    font-family: Estonia;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.return_link:hover{
+    color: rgb(93, 148, 158);
+
+}
+
+.galleryTitle{
+    color: rgb(192, 133, 24);
+    font-family: Estonia;
+    font-size: 4rem;
+    margin-left: 2rem;
+    font-weight: 550;
+    font-stretch: expanded;
+    text-shadow: 1px 1px rgb(40, 93, 114);
+    /* text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-skip: 1rem; */
+
+}
+
+.gallery{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+
+}
+
+.image{
+    padding: 2rem;
+    width: 20%;
+   
+
+}
+
+.zodiac_title{
+
+}
+
+.zodiac_image{
+
+}
