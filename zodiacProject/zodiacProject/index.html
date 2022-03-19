@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Which Magical Creature Are You/ </title>
+</head>
+
+
+
+<body class="home">
+
+    <style>
+        body {
+          background-image: url("zodiacImages/Hogwarts_Bright_BG.jpg");
+        }
+        </style>
+
+
+<!-- toolbar-->
+    <div class="toolbar">
+        <!-- <audio class="bg-music" loop preload="auto" ><source src="zodiacProject/sounds/adventure_beyond.mp3" type="audio/mp3"> </audio> -->
+            <!-- <button class="js-sound-button sound_button toolbar_button_style" type="image" >  <img src="zodiacImages/sound.png" class="play-button-image toolbar_icon" > 
+</button> -->
+            <audio  controls id="music" autoplay type="audio/mp3"> 
+                <source src="sounds/adventure_beyond.mp3" type="audio/mp3"> 
+            </audio>
+            <button class="js-help-button  toolbar_button_style" type="button">  <img src="zodiacImages/help.png" class="toolbar_icon" > </button>
+
+    </div>
+
+    <div class="js-help-btn-div">
+        <ul> 
+            <li class="help_title"> <h2 > Need Some Help? </h2> </li>
+            <li class="help_paragraph"> <p> In the entry box, input a birthdate by either inputting numbers or picking a date with the calendar icon </p> </li>
+            <li class="help_paragraph"> <p> Hit 'Enter' and your result should pop up on the side with a magical creature from the Wizarding World of Harry Potter </p></li>
+            <li class="help_paragraph">  <p> You should be able to input another date in the same input box after you get your results. </p></li>
+            <li class="help_paragraph"> <p> Feel free to explore all of the possible creatures by clicking the 'Explore the Creatures' button below! </p></li>
+            <li class="help_paragraph"> <p> Have a magical journey~</p> </li>
+        </ul>
+    </div> 
+
+
+<!-- heading -->
+    <div class="heading">
+        <a href="index.html" class="heading_one"> <h1 class="heading_one_decor">  Fantastic Beasts of the </h1> </a>
+       <a  href="index.html" class="heading_two">  <h1 class="heading_two_decor"> Wizarding World </h1></a>
+
+    </div>
+
+
+
+<!-- birthday input -->
+    <div class="birthday_input">
+        <h4>Enter your birthdate to discover which creature you align with: </h4>
+
+        <div class="button">
+            <form action="">
+                <label for="birthdateInput"> </label>
+                <input  id="birthdateInput" class="js-date-input" type="date" name="birthdate">
+                <button class="js-submit-button" type="button"> Enter </button>
+            </form>
+        </div>
+        <p class="zodiac-result js-zodiac-result"> </p>
+    </div>
+
+<!-- result display -->
+    <!-- <div class="zodiac_display">
+        <div class="js-basilisk-result-div">
+            <img src="zodiacImages/basilisk.jpeg" class="result-image">
+            <div class="text-results-align">
+                <h1 class="result-creature"> Basilisk </h1>
+                <h1 class="result-date"> (October 23 - November 21) </h1>
+    
+                <p class="result-bio">
+                  The basilisk is a mysterious creature who is bold, fierce, and is not afraid to reach for what it wants. 
+                    Basilisks have great courage and are firm on their beliefs and their aspirations, and are loyal to those 
+                    they call a friend. 
+                </p>
+            </div>
+           
+        </div>
+    </div>  -->
+    
+
+<!-- explore all creatures link -->
+    <div class="explore_image_link">
+        <a href="creatureGallery.html" > <img src="zodiacImages/explore_banner.png" class="explore_image" width="150px"><img> </a>
+        
+    </div>
+
+
+    
+
+    <script src="zodiacScript.js" ></script>
+</body>
+</html>
+
