@@ -1,3 +1,4 @@
+
 // initializers
 let month = "";
 let date = "";
@@ -25,6 +26,8 @@ helpButton.addEventListener('click', showHelp);
 
 
 
+
+
 const submitButton = document.querySelector('.js-submit-button');
 submitButton.addEventListener('click', function(event){
     event.preventDefault();
@@ -36,6 +39,9 @@ function getBirthdate(){
     const birthDate = new Date(dateInput.value); 
     month = birthDate.getMonth() + 1 ;
     date = birthDate.getDate() + 1;
+
+    console.log(month);
+
 
 
 
@@ -152,7 +158,6 @@ soundButton.addEventListener('click', playMusic);
         //open up hippogriff html 
         window.open("https://nytrea.com/idm231/zodiacProject/hippogriff.html", "_self");
 
-    
     }
     
     //display resulting creature in words 
